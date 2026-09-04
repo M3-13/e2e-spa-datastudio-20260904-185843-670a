@@ -1,0 +1,106 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.selectLabel {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: 13px;
+  color: var(--color-muted);
+}
+
+.select {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-0) var(--space-2);
+  min-height: 40px;
+  font-size: 14px;
+  color: var(--color-fg);
+}
+
+.charts {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+@media (min-width: 1024px) {
+  .charts {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.chartCard {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-3);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.chartTitle {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-fg);
+}
+
+.svg {
+  width: 100%;
+  height: auto;
+  min-height: 240px;
+}
+
+.empty {
+  margin: 0;
+  padding: var(--space-5) var(--space-3);
+  text-align: center;
+  color: var(--color-muted);
+  font-size: 14px;
+}
+
+.axisLine {
+  stroke: var(--color-border);
+}
+
+.gridLine {
+  stroke: var(--color-border);
+  stroke-dasharray: 3 3;
+}
+
+.axisText {
+  fill: var(--color-muted);
+  font-size: 10px;
+}
+
+.bar {
+  fill: var(--color-accent);
+}
+
+.line {
+  fill: none;
+  stroke: var(--color-accent);
+  stroke-width: 2px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
