@@ -1,0 +1,26 @@
+.toggle {
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-fg);
+  cursor: pointer;
+}
+
+.toggle:hover {
+  border-color: var(--color-accent);
+  background: var(--color-accent_soft);
+}
+
+.toggle:active {
+  filter: brightness(0.92);
+}
+
+.toggle:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--color-accent_soft);
+}
