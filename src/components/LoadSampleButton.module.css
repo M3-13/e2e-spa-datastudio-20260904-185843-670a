@@ -1,0 +1,30 @@
+.button {
+  background: var(--color-accent);
+  color: #ffffff;
+  border: none;
+  border-radius: var(--radius-md);
+  padding: 10px 16px;
+  min-height: 44px;
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.button:hover:not(:disabled) {
+  background: var(--color-accent_hover);
+}
+
+.button:active:not(:disabled) {
+  filter: brightness(0.92);
+}
+
+.button:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--color-accent_soft);
+}
+
+.button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}

@@ -1,3 +1,38 @@
+const SAMPLE_ROWS: string[] = [
+  'Name,Kategorie,Datum,Umsatz,Menge',
+  'Tischlampe Nordik,Elektronik,2024-01-12,49.90,3',
+  'Becher Set Keramik,Haushalt,2024-01-15,24.50,8',
+  'Roman "Nordwind",Bücher,2024-02-03,18.00,12',
+  'Wollpullover Grau,Kleidung,2024-02-08,79.95,4',
+  'Kaffeebohnen 1kg,Lebensmittel,2024-02-11,23.90,20',
+  'Kopfhörer Studio,Elektronik,2024-02-19,129.00,2',
+  'Schneidebrett Buche,Haushalt,2024-03-02,15.90,9',
+  'Sachbuch Garten,Bücher,2024-03-07,26.00,6',
+  'Jeans Slim Fit,Kleidung,2024-03-14,69.50,5',
+  'Olivenöl Extra,Lebensmittel,2024-03-20,12.80,14',
+  'Ladegerät USB-C,Elektronik,2024-04-01,34.90,7',
+  'Pfanne beschichtet,Haushalt,2024-04-05,42.00,3',
+  'Kinderbuch Bilder,Bücher,2024-04-12,9.90,18',
+  'T-Shirt Weiß,Kleidung,2024-04-18,14.99,22',
+  'Honig 500g,Lebensmittel,2024-04-25,6.50,16',
+  'Monitor 24 Zoll,Elektronik,2024-05-03,189.00,1',
+  'Vorratsdosen Set,Haushalt,2024-05-09,32.50,6',
+  'Reiseführer Alpen,Bücher,2024-05-15,21.00,4',
+  'Regenjacke Blau,Kleidung,2024-05-21,89.90,3',
+  'Nudeln Vollkorn,Lebensmittel,2024-06-01,3.20,30',
+  'Tastatur Mechanisch,Elektronik,2024-06-06,79.00,2',
+  'Handtücher Baumwolle,Haushalt,2024-06-12,28.00,7',
+  'Krimi Thriller,Bücher,2024-06-18,13.50,11',
+  'Socken 3er-Pack,Kleidung,2024-06-24,9.99,25',
+  'Tee Grüner Sencha,Lebensmittel,2024-07-02,7.80,19',
+  'Maus Wireless,Elektronik,2024-07-09,24.90,8',
+  'Gusseisen Topf,Haushalt,2024-07-15,59.00,2',
+  'Atlas Weltkarte,Bücher,2024-07-21,19.90,5',
+  'Mütze Winter,Kleidung,2024-07-28,16.50,9',
+  'Müsli Haferflocken,Lebensmittel,2024-08-03,4.90,26',
+  'Lautsprecher Bluetooth,Elektronik,2024-08-10,99.00,3',
+];
+
 export function getSampleCsv(): string {
-  return '';
+  return SAMPLE_ROWS.join('\n');
 }
