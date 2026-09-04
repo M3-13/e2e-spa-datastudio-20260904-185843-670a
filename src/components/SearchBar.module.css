@@ -1,0 +1,26 @@
+.searchbar {
+  display: flex;
+  flex: 1;
+  min-width: 200px;
+}
+
+.input {
+  width: 100%;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 8px 12px;
+  min-height: 40px;
+  font-size: 14px;
+  color: var(--color-fg);
+}
+
+.input::placeholder {
+  color: var(--color-muted);
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px var(--color-accent_soft);
+}
