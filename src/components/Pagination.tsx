@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import { useEffect, useMemo } from 'react';
 import type { ChangeEvent, ReactElement } from 'react';
 import { useAppState } from '../state/AppState';
 import { getVisibleColumns } from '../lib/columns';
@@ -24,12 +24,19 @@ export function Pagination(): ReactElement | null {
     [rows, filters, search, visibleCols],
   );
 
+  const total = filtered.length;
+  const totalPages = Math.max(1, Math.ceil(total / pageSize));
+
+  useEffect(() => {
+    if (page > totalPages) {
+      setPage(totalPages);
+    }
+  }, [page, totalPages, setPage]);
+
   if (data === null) {
     return null;
   }
 
-  const total = filtered.length;
-  const totalPages = Math.max(1, Math.ceil(total / pageSize));
   const currentPage = Math.min(Math.max(1, page), totalPages);
 
   const handlePageSizeChange = (event: ChangeEvent<HTMLSelectElement>) => {
