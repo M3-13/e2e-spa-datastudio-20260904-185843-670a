@@ -1,4 +1,4 @@
-[data-theme='dark'] {
+:root[data-theme='dark'] {
   --color-bg: #0f141a;
   --color-surface: #1a2129;
   --color-fg: #e6e9ed;
