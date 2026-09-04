@@ -1,0 +1,30 @@
+.resultcount {
+  margin: 0;
+  display: inline-flex;
+  align-items: baseline;
+  gap: var(--space-1);
+  font-size: 13px;
+  color: var(--color-muted);
+}
+
+.filtered {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-fg);
+  font-variant-numeric: tabular-nums;
+}
+
+.separator {
+  color: var(--color-muted);
+}
+
+.total {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-fg);
+  font-variant-numeric: tabular-nums;
+}
+
+.label {
+  color: var(--color-muted);
+}
