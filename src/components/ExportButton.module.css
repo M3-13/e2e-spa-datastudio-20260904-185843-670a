@@ -1,0 +1,30 @@
+.exportButton {
+  padding: 10px 16px;
+  border: none;
+  border-radius: var(--radius-md);
+  background: var(--color-accent);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  min-height: 44px;
+  cursor: pointer;
+}
+
+.exportButton:hover:not(:disabled) {
+  background: var(--color-accent_hover);
+}
+
+.exportButton:active:not(:disabled) {
+  background: var(--color-accent_hover);
+  filter: brightness(0.92);
+}
+
+.exportButton:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.exportButton:focus-visible {
+  outline: 2px solid var(--color-accent_soft);
+  outline-offset: 2px;
+}
