@@ -1,0 +1,100 @@
+.dropzoneSection {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.dropzone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  border: 2px dashed var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  min-height: 160px;
+  text-align: center;
+  color: var(--color-muted);
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.dropzoneActive {
+  border-color: var(--color-accent);
+  background: var(--color-accent_soft);
+}
+
+.fileButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  min-height: 44px;
+  border-radius: var(--radius-md);
+  background: var(--color-accent);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.fileButton:hover {
+  background: var(--color-accent_hover);
+}
+
+.dropHint {
+  margin: 0;
+  font-size: 13px;
+  color: var(--color-muted);
+}
+
+.hiddenInput {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.statusText {
+  margin: 0;
+  font-size: 13px;
+  color: var(--color-muted);
+}
+
+.errorText {
+  margin: 0;
+  font-size: 13px;
+  color: var(--color-danger);
+}
+
+.delimiterRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.delimiterInfo {
+  font-size: 13px;
+  color: var(--color-fg);
+}
+
+.delimiterLabel {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: 13px;
+  color: var(--color-muted);
+}
+
+.delimiterSelect {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 6px 10px;
+  min-height: 36px;
+  font-size: 14px;
+  color: var(--color-fg);
+}
