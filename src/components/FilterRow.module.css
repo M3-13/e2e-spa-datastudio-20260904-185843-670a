@@ -1,0 +1,46 @@
+.filterrow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  align-items: flex-end;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-0);
+}
+
+.label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-muted);
+}
+
+.input,
+.select {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 8px 10px;
+  min-height: 36px;
+  font-size: 14px;
+  color: var(--color-fg);
+}
+
+.input::placeholder {
+  color: var(--color-muted);
+}
+
+.input:focus,
+.select:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px var(--color-accent_soft);
+}
+
+.numberControls {
+  display: flex;
+  gap: var(--space-1);
+  align-items: center;
+}
